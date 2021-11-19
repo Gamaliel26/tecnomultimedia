@@ -36,7 +36,7 @@ class Enemigo {
   void mover() {
     x-=5;
     if (x<0) {
-      x=800;
+      x= random(50, width-50)+width;
       y = random(50, height-50);
     }
   }

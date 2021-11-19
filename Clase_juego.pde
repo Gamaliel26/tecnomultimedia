@@ -36,7 +36,7 @@ class Juego {
     nave = new Nave (this, img[3], mouseX, mouseY, 50, 50);
 
     botonIniciar = new Boton(this, "Empezar", fuente[1], width/2, height/2+height/4, 300, 60);
-    botonInicio = new Boton(this, "Volver al inicio", fuente[1], width/2, height/2+height/4, 300, 60);
+    botonInicio = new Boton(this, "Reintentar", fuente[1], width/2, height/2+height/4, 300, 60);
     botonReset = new Boton(this, "Reintentar", fuente[1], width/2, height/2+height/4, 300, 60);
   }
   void dibujar() {
@@ -80,6 +80,7 @@ class Juego {
       pantalla=3;
     }
   }
+
   void titulo(String titulo, PFont fuente, int x, int y, int tam) {
     pushStyle();
 
@@ -95,10 +96,10 @@ class Juego {
     vida=100;
   }
   void reiniciarBichos() {
-    for (int i = 0; i < asteroide.length; i++) {
+    for (int i = 0; i < 3; i++) {
       asteroide[i].reiniciar();
     }
-    for (int i = 0; i < gusano.length; i++) {
+    for (int i = 0; i < 3; i++) {
       gusano[i].reiniciar();
     }
   }

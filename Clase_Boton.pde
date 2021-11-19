@@ -56,6 +56,8 @@ class Boton {
       juego.pantalla = 0;
     } else if (isMouseOver() && juego.pantalla == 3) {
       juego.pantalla = 1;
+      juego.reiniciarVida();
+      juego.reiniciarBichos();
     }
   }
 } 
