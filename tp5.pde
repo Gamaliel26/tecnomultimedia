@@ -2,7 +2,7 @@
 // Profesor: Bedoian David
 // Comisión Nro 3
 // Legajo: 68318/6
-// Enlace al video: 
+// Enlace al video: https://youtu.be/FC_vLmsNX1I
 
 
 Juego juego;
